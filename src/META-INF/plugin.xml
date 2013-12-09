@@ -48,5 +48,7 @@
         <!-- Add your extensions here -->
         <applicationService serviceInterface="org.sample.plugin.MyService"
                 serviceImplementation="org.sample.plugin.MyServiceImpl"/>
+        <projectConfigurable instance="org.sample.plugin.MyConfigurable"/>
+        <configurationType implementation="org.sample.plugin.MyConfigurationType"/>
     </extensions>
 </idea-plugin>
