@@ -8,7 +8,11 @@ import com.intellij.testFramework.ModuleTestCase;
  * @author nik
  */
 public class SampleTest extends ModuleTestCase {
-  public void testCreate() {
+  public void testModules() {
+    Module[] modules = ModuleManager.getInstance(myProject).getModules();
+    assertEquals(1, modules.length);
+  }
+  public void testModules2() {
     Module[] modules = ModuleManager.getInstance(myProject).getModules();
     assertEquals(1, modules.length);
   }
