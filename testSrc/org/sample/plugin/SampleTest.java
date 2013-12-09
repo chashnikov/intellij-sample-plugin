@@ -10,7 +10,7 @@ import com.intellij.testFramework.ModuleTestCase;
 public class SampleTest extends ModuleTestCase {
   public void testModules() {
     Module[] modules = ModuleManager.getInstance(myProject).getModules();
-    assertEquals(0, modules.length);
+    assertEquals(1, modules.length);
   }
   public void testModules2() {
     Module[] modules = ModuleManager.getInstance(myProject).getModules();
