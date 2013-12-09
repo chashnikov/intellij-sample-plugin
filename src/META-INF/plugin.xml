@@ -23,7 +23,10 @@
     </application-components>
 
     <project-components>
-        <!-- Add your project components here -->
+        <component>
+            <interface-class>org.sample.plugin.MyComponentInterface</interface-class>
+            <implementation-class>org.sample.plugin.MyComponent</implementation-class>
+        </component>
     </project-components>
 
     <actions>
@@ -34,10 +37,16 @@
     </actions>
 
     <extensionPoints>
-
+        <extensionPoint name="MyExtension" interface="org.sample.plugin.MyExtension"/>
     </extensionPoints>
+
+    <extensions defaultExtensionNs="org.intellij.samplePlugin">
+        <MyExtension implementation="org.sample.plugin.MyImplementation"/>
+    </extensions>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+        <applicationService serviceInterface="org.sample.plugin.MyService"
+                serviceImplementation="org.sample.plugin.MyServiceImpl"/>
     </extensions>
 </idea-plugin>
