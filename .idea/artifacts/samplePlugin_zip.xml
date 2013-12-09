@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="samplePlugin:zip">
+    <output-path>$PROJECT_DIR$/out/artifacts/samplePlugin_zip</output-path>
+    <root id="archive" name="samplePlugin.jar">
+      <element id="module-output" name="samplePlugin" />
+    </root>
+  </artifact>
+</component>
