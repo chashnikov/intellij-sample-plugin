@@ -50,5 +50,6 @@
                 serviceImplementation="org.sample.plugin.MyServiceImpl"/>
         <projectConfigurable instance="org.sample.plugin.MyConfigurable"/>
         <configurationType implementation="org.sample.plugin.MyConfigurationType"/>
+        <renamePsiElementProcessor implementation="org.sample.plugin.renameRefactoring.MyRenameElementProcessor"/>
     </extensions>
 </idea-plugin>
