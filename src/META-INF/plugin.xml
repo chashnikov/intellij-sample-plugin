@@ -27,6 +27,9 @@
             <interface-class>org.sample.plugin.MyComponentInterface</interface-class>
             <implementation-class>org.sample.plugin.MyComponent</implementation-class>
         </component>
+        <component>
+            <implementation-class>org.sample.plugin.readOnlyFragment.ReadOnlyFragmentInitializer</implementation-class>
+        </component>
     </project-components>
 
     <actions>
@@ -50,6 +53,7 @@
                 serviceImplementation="org.sample.plugin.MyServiceImpl"/>
         <projectConfigurable instance="org.sample.plugin.MyConfigurable"/>
         <configurationType implementation="org.sample.plugin.MyConfigurationType"/>
+        <lang.foldingBuilder language="JAVA" implementationClass="org.sample.plugin.folding.MyFoldingBuilder"/>
         <renamePsiElementProcessor implementation="org.sample.plugin.renameRefactoring.MyRenameElementProcessor"/>
     </extensions>
 </idea-plugin>
